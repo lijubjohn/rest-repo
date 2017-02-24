@@ -1,0 +1,10 @@
+# Sample curls to test rest app
+
+curl -v "http://localhost:8080/employee/100" -X GET
+
+curl -v "http://localhost:8080/employee/all" -X GET
+
+curl -v "http://localhost:8080/employee" -X POST -H "Content-Type:application/json" -d '{"firstName":"Mark","lastName":"Jones","dept":"IT"}'
+curl -v "http://localhost:8080/employee" -X POST -H "Content-Type:application/json" -d '{"firstName":"Liju","lastName":"John","dept":"Sales"}'
+
+curl -v "http://localhost:8080/employee/100" -X DELETE
